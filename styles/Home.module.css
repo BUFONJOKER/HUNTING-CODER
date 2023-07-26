@@ -2,8 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
+
   min-height: 100vh;
 }
 
@@ -97,7 +96,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -226,4 +225,36 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.article {
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+.heading {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.description {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: black;
 }

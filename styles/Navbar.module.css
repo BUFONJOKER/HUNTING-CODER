@@ -1,0 +1,54 @@
+.navbar {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.navbar_item {
+  margin-right: 10px;
+}
+
+.navbar_link {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar_link:hover {
+  background-color: #555;
+}
+
+.navbar_toggle {
+  display: none; /* Hide the toggle button by default */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar_list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar_item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #navbar-list {
+    display: none; /* Hide the navbar list by default in mobile view */
+  }
+}
